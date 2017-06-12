@@ -1,20 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {ModuleWithProviders, NgModule} from '@angular/core';
+import {IconModule} from './icon/icon.module';
+import {MenuModule} from './menu/menu.module';
+import {ListModule} from './list/list.module';
+import {TextModule} from './text/text.module';
+// import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
+const CAPDASH2_UI_MODULES = [
+  IconModule,
+  MenuModule,
+  ListModule,
+  TextModule
+];
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [...CAPDASH2_UI_MODULES],
+  exports: CAPDASH2_UI_MODULES
 })
-export class AppModule { }
+
+export class CapDashModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: CapDashModule,
+      providers: []
+    };
+  }
+}
