@@ -1,3 +1,4 @@
+// Todo: set up e2e test framework for current repo
 import { browser, element, by } from 'protractor';
 
 export class Capdash2UiComponentsPage {
@@ -6,6 +7,6 @@ export class Capdash2UiComponentsPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('lib-root h1')).getText();
   }
 }
