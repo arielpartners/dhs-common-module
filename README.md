@@ -6,6 +6,7 @@
 * [Scripts](https://github.com/arielpartners/capdash2-common-module#scripts)
 * [Modules](https://github.com/arielpartners/capdash2-common-module#modules)
 
+
 ## Getting Started
 
 CDUI was develop to provide common Angular4 components for Capdash2 for developers to build and maintain working project with less pain,
@@ -66,7 +67,6 @@ Capdash Common Module is using redux to help you manage states of your project. 
 
 Browse [included modules](link_to_modules_section) for further detail.
 
------
 
 ## Scripts
 
@@ -78,8 +78,6 @@ Browse [included modules](link_to_modules_section) for further detail.
 | `npm run coverage` | Run karma testing istanbul coverage |
 | `npm run coverage-open` | Open karma coverage test report |
 
-
------
 
 ## Modules
 
