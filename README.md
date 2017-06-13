@@ -2,9 +2,9 @@
 
 
 ## Agenda
-* Getting Started
-* Scripts
-* Modules
+* [Getting Started](https://github.com/arielpartners/capdash2-common-module#getting-started)
+* [Scripts](https://github.com/arielpartners/capdash2-common-module#scripts)
+* [Modules](https://github.com/arielpartners/capdash2-common-module#modules)
 
 ## Getting Started
 
@@ -27,28 +27,42 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
 
 **src/app.module.ts**
 
-     import ...
-     import { CapDashModule } from 'capdash-common-module/src/lib/module';
+    import ...
+    import { CapDashModule } from 'capdash-common-module/src/lib/module';
 
-     @NgModule({
-       declarations: [
-         AppComponent,
-       ],
-       imports: [
-         CapDashModule.forRoot()
-       ],
-       bootstrap: [AppComponent]
-     })
-     export class AppModule {}
+    @NgModule({
+      declarations: [
+        AppComponent,
+      ],
+      imports: [
+        CapDashModule.forRoot()
+      ],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule {}
 
 
-**3. Combine Reducers**
+### 3. Combine Reducers
 
-Capdash Common Module is using redux to help you manage states of your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. 
+Capdash Common Module is using redux to help you manage states of your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
 
-* **Combine reducer example**
+**Combine reducer example**
 
->     //Todo: add instruction to add reducer to application store
+    import { combineReducers } from 'redux';
+    import { composeReducers, defaultFormReducer } from '@angular-redux/form';
+    
+    import { DropdownReducer } from 'capdash2-common-module/src/lib/menu';
+    import { SomeReducer } from './path/to/some-reducer.js'
+    import { AnyReducer } from './path/to/some-reducer.js'
+    
+    export const rootReducer = composeReducers(
+      defaultFormReducer(),
+      combineReducers({
+        dropdown: DropdownReducer,
+        some: SomeReducer,
+        any: AnyReducer
+      })
+    );
 
 Browse [included modules](link_to_modules_section) for further detail.
 
@@ -69,40 +83,11 @@ Browse [included modules](link_to_modules_section) for further detail.
 
 ## Modules
 
-Todo: make this into table
+### [MenuModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/menu/menu.md)
 
-### [MenuModule](link_to_Menu.md)
+### [ListModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/list/list.md)
 
-**Components**
+### [IconModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/icon/icon.md)
 
-* Menu
-* MenuHeader
-* MenuItem
-* MenuButton
-
-**Directives**
-
-* CloseToggleDirective
-
-**Services**
-
-* DropdownService
-
-[ListModule](link_to_List.md)
-    components
-    - List
-    - ListItem
-
-[BadgeModule](link_to_Badge.md)
-    components
-    - Badge
-
-[IconModule](link_to_Icon.md)
-    components
-    - Icon
-
-[TextModule](link_to_Text.md)
-    directives
-    - TextInverse
-
+### [TextModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/list/list.md)
 

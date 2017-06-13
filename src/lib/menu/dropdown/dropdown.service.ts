@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { NgRedux } from '@angular-redux/store';
-// import { IAppState } from '../../store/root.types';
 import { DropdownActions } from './dropdown.actions';
 
 @Injectable()
