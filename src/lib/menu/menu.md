@@ -20,7 +20,7 @@ Menu item component wraps given child nodes with `<li><a>`. You can manipulate i
 
 Selector: `cd-menu`
 
-** Properties **
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ Selector: `cd-menu`
 
 Selector: `cd-menu-button`
 
-** Properties **
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Selector: `cd-menu-button`
 
 Selector: `cd-menu-header`
 
-** Properties **
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ Selector: `cd-menu-header`
 
 Selector: `cd-menu-item`
 
-** Properties **
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ Selector: `cd-menu-item`
 
 Selector: `cd-close-toggle`, `close-toggle`
 
-** Methods **
+**Methods**
 
 | Name | Description |
 | --- | --- |
@@ -80,7 +80,7 @@ Selector: `cd-close-toggle`, `close-toggle`
 
 #### DropdownService
 
-** Methods **
+**Methods**
 
 | Name | Description |
 | --- | --- |

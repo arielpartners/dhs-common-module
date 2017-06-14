@@ -20,6 +20,8 @@ Run following command on your terminal to add dependency on
  `package.json`.
 
     npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
+    
+    npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
 
 
 ### 2. Import module
@@ -89,3 +91,11 @@ Browse [included modules](link_to_modules_section) for further detail.
 
 ### [TextModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/list/list.md)
 
+## Technologies Used 
+
+* [Angular 4](https://angular.io/) Angular4 JavaScript Client-Side MVC Framework (bundles Typescript and RxJS)
+* [Redux](http://redux.js.org/) predictable state container for JavaScript apps
+* [Redux Observables](https://redux-observable.js.org/) RxJS 5-based middleware for Redux.
+* [Bootstrap](http://www.getbootstrap.com) and [Ng-Bootstrap](https://ng-bootstrap.github.io) CSS Framework and Bootstrap components powered by Angular
+* [LESS](http://www.lesscss.org) CSS preprocessor to promote reusability and maintainability
+* [Jasmine](https://jasmine.github.io/) Behavior-driven development framework for unit testing JavaScript code

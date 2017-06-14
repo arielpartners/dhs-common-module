@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
     "lint": "ng lint",
     "test": "NODE_ENV=test ng test --watch=false",
     "test-browser": "ng test",

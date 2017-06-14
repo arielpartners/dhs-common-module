@@ -5,18 +5,18 @@
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "src/demo-app",
+      "outDir": "dist/demo-app",
       "main": "main.ts",
-      "polyfills": "polyfills.ts",
-      "test": "test.ts",
-      "tsconfig": "tsconfig.json",
-      "prefix": "cd",
+      "polyfills": "../polyfills.ts",
+      "test": "../test.ts",
+      "tsconfig": "../tsconfig.json",
+      "prefix": "demo",
       "scripts": [],
-      "environmentSource": "environments/environment.ts",
+      "environmentSource": "../environments/environment.ts",
       "environments": {
-        "dev": "environments/environment.ts",
-        "prod": "environments/environment.prod.ts"
+        "dev": "../environments/environment.ts",
+        "prod": "../environments/environment.prod.ts"
       }
     }
   ],
