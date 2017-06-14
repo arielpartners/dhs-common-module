@@ -14,13 +14,15 @@ import { DemoAppComponent } from './app/demo-app.component';
 import { HomeComponent } from './home.component';
 import { DemoMenuComponent } from './menu/menu.component';
 import { DemoListComponent } from './list/list.component';
+import { DemoIconComponent } from './icon/icon.component';
 
 @NgModule({
   declarations: [
     DemoAppComponent,
     HomeComponent,
     DemoMenuComponent,
-    DemoListComponent
+    DemoListComponent,
+    DemoIconComponent
   ],
   imports: [
     BrowserModule,
