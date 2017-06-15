@@ -5,7 +5,7 @@ import {ListModule} from './list/list.module';
 import {TextModule} from './text/text.module';
 // import {CommonModule} from '@angular/common';
 
-const CAPDASH2_UI_MODULES = [
+export const CAPDASH2_UI_MODULES = [
   IconModule,
   MenuModule,
   ListModule,

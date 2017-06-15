@@ -38,7 +38,7 @@ export class MenuButtonComponent {
 
   _classList: any = {};
 
-  // Todo: MenuService should be part of this module, but located at app/services
+  // Todo: MenuService should be part of this module, but located at containers/services
   // Todo: find a way to make this module independent from application, perhaps using redux store for this job is not ideal
   constructor(
     public menu: DropdownService
