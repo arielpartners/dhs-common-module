@@ -14,7 +14,10 @@ import { MarkdownModule } from 'angular2-markdown';
 import { DemoAppComponent } from './demo-app.component';
 import { HomeComponent } from './components/home/home.component';
 import { DemoMenuComponent } from './components/menu/menu.component';
-import {CodeViewerComponent} from './components/code-viewer/code-viewer.component';
+import { CodeViewerComponent } from './components/code-viewer/code-viewer.component';
+import { DemoListComponent } from './components/list/list.component';
+import { DemoIconComponent } from './components/icon/icon.component';
+import { DummyItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import {CodeViewerComponent} from './components/code-viewer/code-viewer.componen
     HomeComponent,
     CodeViewerComponent,
     DemoMenuComponent,
+    DemoListComponent,
+    DemoIconComponent,
+    DummyItemComponent
   ],
   imports: [
     BrowserModule,
