@@ -7,12 +7,23 @@
     {
       "root": "src/demo-app",
       "outDir": "dist/demo-app",
+      "assets": [
+        { "glob": "**/*", "input": "../assets/docs", "output": "./assets/docs/" },
+        { "glob": "**/*.md", "input": "../lib/", "output": "./assets/docs/" },
+        { "glob": "README.md", "input": "../../", "output": "./assets/docs/" }
+      ],
+      "index": "index.html",
       "main": "main.ts",
       "polyfills": "../polyfills.ts",
       "test": "../test.ts",
       "tsconfig": "../tsconfig.json",
       "prefix": "demo",
       "scripts": [],
+      "styles": [
+        "../../node_modules/bootstrap/less/bootstrap.less",
+        "../../node_modules/font-awesome/css/font-awesome.css",
+        "../../node_modules/flag-icon-css/less/flag-icon.less"
+      ],
       "environmentSource": "../environments/environment.ts",
       "environments": {
         "dev": "../environments/environment.ts",
