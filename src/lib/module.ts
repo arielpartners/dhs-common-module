@@ -3,6 +3,7 @@ import {IconModule} from './icon/icon.module';
 import {MenuModule} from './menu/menu.module';
 import {ListModule} from './list/list.module';
 import {TextModule} from './text/text.module';
+
 // import {CommonModule} from '@angular/common';
 
 const CAPDASH2_UI_MODULES = [

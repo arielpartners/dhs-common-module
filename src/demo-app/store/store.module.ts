@@ -32,6 +32,5 @@ export class StoreModule {
 
     ngReduxRouter.initialize();
     persistStore(store);
-    console.log(store);
   }
 }

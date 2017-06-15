@@ -15,7 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DemoMenuComponent } from './components/menu/menu.component';
 import { DemoListComponent } from './components/list/list.component';
 import { DemoIconComponent } from './components/icon/icon.component';
-
+import { DummyItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { DemoIconComponent } from './components/icon/icon.component';
     HomeComponent,
     DemoMenuComponent,
     DemoListComponent,
-    DemoIconComponent
+    DemoIconComponent,
+    DummyItemComponent
   ],
   imports: [
     BrowserModule,
