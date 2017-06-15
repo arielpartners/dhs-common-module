@@ -19,10 +19,11 @@ Follow the instruction below to add this repository to any Angular4 project as a
 Run the following command on your terminal to add dependency in 
  `package.json`.
 
-    npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
+```bash
+npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
     
-    npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
-
+npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
+```
 
 ### 2. Import module
 
@@ -30,6 +31,7 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
 
 **src/app.module.ts**
 
+``` javascript
     import ...
     import { CapDashModule } from 'capdash-common-module/src/lib/module';
 
@@ -43,7 +45,7 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
       bootstrap: [AppComponent]
     })
     export class AppModule {}
-
+```
 
 ### 3. Combine Reducers
 
@@ -51,6 +53,7 @@ Capdash Common Module is using redux to help you manage state in your project. H
 
 **Combine reducer example**
 
+``` javascript
     import { combineReducers } from 'redux';
     import { composeReducers, defaultFormReducer } from '@angular-redux/form';
     
@@ -66,8 +69,9 @@ Capdash Common Module is using redux to help you manage state in your project. H
         any: AnyReducer
       })
     );
+```
 
-Browse [included modules](link_to_modules_section) for further detail.
+Browse [included modules](https://github.com/arielpartners/capdash2-common-module#modules) for further detail.
 
 
 ## Scripts
