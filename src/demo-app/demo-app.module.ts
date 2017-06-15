@@ -3,18 +3,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HttpModule } from '@angular/http';
-import { DemoAppRoute } from './app/demo-app.routes';
+import { DemoAppRoute } from './demo-app.routes';
 import { CapDashModule } from '../lib/module';
 
 import { NgReduxModule } from '@angular-redux/store';
 import { NgReduxRouterModule } from '@angular-redux/router';
 import { StoreModule } from './store/store.module';
 
-import { DemoAppComponent } from './app/demo-app.component';
-import { HomeComponent } from './home.component';
-import { DemoMenuComponent } from './menu/menu.component';
-import { DemoListComponent } from './list/list.component';
-import { DemoIconComponent } from './icon/icon.component';
+import { DemoAppComponent } from './demo-app.component';
+import { HomeComponent } from './components/home/home.component';
+import { DemoMenuComponent } from './components/menu/menu.component';
+import { DemoListComponent } from './components/list/list.component';
+import { DemoIconComponent } from './components/icon/icon.component';
+
 
 @NgModule({
   declarations: [
