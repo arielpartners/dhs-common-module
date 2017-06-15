@@ -4,7 +4,7 @@ import {ListComponent, NavListCssDirective} from './list.component';
 import { BadgeComponent } from './badge/badge.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import {BrowserModule} from '@angular/platform-browser';
-
+import {RouterModule} from '@angular/router';
 @NgModule({
   declarations: [
     ListComponent,
@@ -14,7 +14,8 @@ import {BrowserModule} from '@angular/platform-browser';
   ],
   imports: [
     CommonModule,
-    BrowserModule
+    BrowserModule,
+    RouterModule
   ],
   exports: [
     ListComponent,

@@ -38,14 +38,13 @@ Selector: `cd-badge`
 
 
 ## Example
-    
+
     <cd-list>
         <cd-list-item link="/item1">
           Item1
-          <cd-badge *ngIf="item.badge" [status]="item.badge.class" [value]="item.badge.value"></cd-badge>
-        </cd-menu-item>
-        <cd-list-item link="/item2">Item2</cd-menu-item>
-        <cd-list-item link="/item3">Item3</cd-menu-item>
-        <cd-list-item link="/item4">Item4</cd-menu-item>
+          <cd-badge status="success" value="NEW"></cd-badge>
+        </cd-list-item>
+        <cd-list-item link="/item2">Item2</cd-list-item>
+        <cd-list-item link="/item3">Item3</cd-list-item>
+        <cd-list-item link="/item4">Item4</cd-list-item>
     </cd-list>
-

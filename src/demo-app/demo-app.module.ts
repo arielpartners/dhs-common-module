@@ -13,12 +13,18 @@ import { StoreModule } from './store/store.module';
 import { DemoAppComponent } from './demo-app.component';
 import { HomeComponent } from './components/home/home.component';
 import { DemoMenuComponent } from './components/menu/menu.component';
+import { DemoListComponent } from './components/list/list.component';
+import { DemoIconComponent } from './components/icon/icon.component';
+import { DummyItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
     DemoAppComponent,
     HomeComponent,
-    DemoMenuComponent
+    DemoMenuComponent,
+    DemoListComponent,
+    DemoIconComponent,
+    DummyItemComponent
   ],
   imports: [
     BrowserModule,
