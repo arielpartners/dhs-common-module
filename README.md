@@ -9,14 +9,14 @@
 
 ## Getting Started
 
-CDUI was develop to provide common Angular4 components for Capdash2 for developers to build and maintain working project with less pain,
-as well as improve load time of Angular2 project on the browser, by allowing developers to import UI modules selectively from node_module directory.
+CDUI was developed to provide common Angular4 components for Capdash2 and related DHS projects.
+CDUI allows developers to build and maintain working project with less pain, as well as improve browser load times for Angular2 projects by allowing developers to import UI modules selectively from the node_module directory.
 
-Follow the instruction below to add this repository to Angular4 project as node module.
+Follow the instruction below to add this repository to any Angular4 project as a node module.
 
 ### 1.Installation
 
-Run following command on your terminal to add dependency on 
+Run the following command on your terminal to add dependency in 
  `package.json`.
 
     npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
@@ -26,7 +26,7 @@ Run following command on your terminal to add dependency on
 
 ### 2. Import module
 
-In order to use Capdash2 Common Module on your Angular4 project, you must import module on `app.module.ts`.
+In order to use Capdash2 Common Module on your Angular4 project, you must import the module in `app.module.ts`.
 
 **src/app.module.ts**
 
@@ -47,7 +47,7 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
 
 ### 3. Combine Reducers
 
-Capdash Common Module is using redux to help you manage states of your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
+Capdash Common Module is using redux to help you manage state in your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
 
 **Combine reducer example**
 
