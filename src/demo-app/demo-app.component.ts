@@ -2,7 +2,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 const appMenu = [
   {
-    name: 'Home',
+    name: 'Common Module',
     link: '/'
   },
   {
