@@ -74,6 +74,8 @@ Browse [included modules](link_to_modules_section) for further detail.
 
 | Command | Description |
 | --- | --- |
+| `npm start` | Start demo app on `localhost:4200` |
+| `npm run build` | Build demo app |
 | `npm run lint` | Run tslint |
 | `npm test` | Run single run karma testing |
 | `npm run test-browser` | Run karma testing on Chrome browser |
