@@ -70,6 +70,7 @@
     "karma-spec-reporter": "0.0.31",
     "less-loader": "^4.0.3",
     "phantomjs-prebuilt": "^2.1.14",
+    "prismjs": "^1.6.0",
     "protractor": "~5.1.0",
     "protractor-cucumber-framework": "^3.1.0",
     "ts-node": "^3.0.4",
