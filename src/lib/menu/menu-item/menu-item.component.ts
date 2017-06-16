@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'cd-menu-item',
+  selector: 'dhs-menu-item',
   template: `
     <ng-container>
       <cd-link [path]="link" cdCloseToggle>
