@@ -13,10 +13,15 @@ import { Router } from '@angular/router';
   selector: 'cd-list-item',
   template: `
     <ng-container>
-      <ng-content></ng-content>
+      <cd-link [path]="link">
+        <ng-content></ng-content>
+      </cd-link>
     </ng-container>
   `,
   styleUrls: ['./list-item.component.less'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ListItemComponent {}
+
+export class ListItemComponent {
+  @Input() link: string;
+}

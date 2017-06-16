@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListComponent, NavListCssDirective } from './list.component';
+import { LinkModule } from '../link/link.module';
 import { BadgeComponent } from './badge/badge.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     BrowserModule,
-    RouterModule
+    LinkModule
   ],
   exports: [
     ListComponent,
