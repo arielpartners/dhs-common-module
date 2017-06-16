@@ -31,26 +31,36 @@ By default, `<cd-icon>` will use font-awesome as its icon font.
 ** Basic **
     
     You can simply add `icon` attribute on `<cd-icon>` to display any font-awesome-icon
-    
-    <cd-icon icon="desktop"></cd-icon>
+
+```html
+<cd-icon icon="desktop"></cd-icon>
+```
 
 ** Set icon size **
 
 Add `size` attribute on `<cd-icon>` to enlarge current icon.
 For more detail, checkout source file of font-awesome [larger.less](https://github.com/FortAwesome/Font-Awesome/blob/v4.7.0/less/larger.less)
 
-    <cd-icon icon="desktop" size="lg"></cd-icon>
+```html
+<cd-icon icon="desktop" size="lg"></cd-icon>
+```
 
 ** Set icon background color **
 
-    <cd-icon color="red" icon="alarm"></cd-icon>
+```html
+<cd-icon color="red" icon="alarm"></cd-icon>
+```
 
 ** Set icon fixed width **
 
-    <cd-icon icon="desktop" size="lg" fixed="true"></cd-icon>
+```html
+<cd-icon icon="desktop" size="lg" fixed="true"></cd-icon>
+```
 
 ** Set font-set **
 
 You can add other font-set as well, however it's not well supported
 
-    <cd-icon font="other-font" icon="desktop"></cd-icon>
+```html
+<cd-icon font="other-font" icon="desktop"></cd-icon>
+```

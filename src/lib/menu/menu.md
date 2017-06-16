@@ -91,15 +91,5 @@ Selector: `cd-close-toggle`, `close-toggle`
 
 
 ## Example
-
-    <cd-menu-button id="myMenu" name="menuName">
-        Menu1
-    </cd-menu-button>
-    <cd-menu triggerBy="myMenu">
-        <cd-menu-header icon="fa fa-desktop" text="Header"></cd-menu-header>
-        <cd-menu-item link="/item1">Item1</cd-menu-item>
-        <cd-menu-item link="/item2">Item2</cd-menu-item>
-        <cd-menu-item link="/item3">Item3</cd-menu-item>
-        <cd-menu-item link="/item4">Item4</cd-menu-item>
-    </cd-menu>
-
+[Basic menu](https://github.com/arielpartners/capdash2-common-module/blob/master/src/assets/docs/menu/menu.example1.md)
+[Dropdown menu](https://github.com/arielpartners/capdash2-common-module/blob/master/src/assets/docs/menu/menu.example2.md)
