@@ -10,7 +10,7 @@ import { DropdownActions } from './dropdown.actions';
 import { MenuModule } from '../menu.module';
 
 
-fdescribe('DropdownDirective', () => {
+describe('DropdownDirective', () => {
   let fixture, directiveEl, directiveInstance, service;
 
   beforeEach(() => {
