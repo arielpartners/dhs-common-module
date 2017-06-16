@@ -8,7 +8,7 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { CommonModule } from '@angular/common';
 import { DropdownService } from './dropdown/dropdown.service';
 import { DropdownActions } from './dropdown/dropdown.actions';
-import { CloseToggleDirective } from './dropdown/dropdown.directive';
+import { CloseToggleDirective, DropdownDirective } from './dropdown/dropdown.directive';
 
 
 @NgModule({
@@ -18,6 +18,7 @@ import { CloseToggleDirective } from './dropdown/dropdown.directive';
     MenuHeaderComponent,
     MenuItemComponent,
     CloseToggleDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
@@ -33,8 +34,9 @@ import { CloseToggleDirective } from './dropdown/dropdown.directive';
     MenuComponent,
     MenuHeaderComponent,
     MenuButtonComponent,
+    MenuItemComponent,
     CloseToggleDirective,
-    MenuItemComponent
+    DropdownDirective
   ],
 })
 export class MenuModule {}

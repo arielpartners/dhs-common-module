@@ -1,5 +1,5 @@
 import {
-  Component,
+  Component, ElementRef,
   Input,
   ViewEncapsulation,
 } from '@angular/core';
@@ -11,8 +11,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./menu.component.less'],
   template: `
     <div [class.show]="(isToggled$ | async) && ((selectedDropdown$ | async) == (_triggerBy))"
-         [ngClass]="_classList"
-         class="dropdown-menu">
+         [ngClass]="_classList">
       <ng-content></ng-content>
     </div>
   `,

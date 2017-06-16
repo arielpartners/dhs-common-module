@@ -31,6 +31,6 @@ export class StoreModule {
     );
 
     ngReduxRouter.initialize();
-    persistStore(store);
+    persistStore(store, {blacklist: ['router']});
   }
 }
