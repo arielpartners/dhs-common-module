@@ -54,6 +54,6 @@ describe('NavListCssDirective', () => {
 });
 
 @Component({
-  template: `<cd-list nav-list></cd-list>`
+  template: `<dhs-list nav-list></dhs-list>`
 })
 class TestWrapperComponent {}

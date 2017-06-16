@@ -98,16 +98,16 @@ class TestCloseToggleComponent {}
 @Component({
   template: `
     <div dropdown>
-      <cd-menu-button id="myDropdownMenu" name="menuName">
+      <dhs-menu-button id="myDropdownMenu" name="menuName">
         Dropdown Menu
-      </cd-menu-button>
-      <cd-menu triggerBy="myDropdownMenu" className="dropdown-test">
-        <cd-menu-header icon="fa fa-desktop" text="Header"></cd-menu-header>
-        <cd-menu-item link="/item">Item1</cd-menu-item>
-        <cd-menu-item link="/item">Item2</cd-menu-item>
-        <cd-menu-item link="/item">Item3</cd-menu-item>
-        <cd-menu-item link="/item">Item4</cd-menu-item>
-      </cd-menu>
+      </dhs-menu-button>
+      <dhs-menu triggerBy="myDropdownMenu" className="dropdown-test">
+        <dhs-menu-header icon="fa fa-desktop" text="Header"></dhs-menu-header>
+        <dhs-menu-item link="/item">Item1</dhs-menu-item>
+        <dhs-menu-item link="/item">Item2</dhs-menu-item>
+        <dhs-menu-item link="/item">Item3</dhs-menu-item>
+        <dhs-menu-item link="/item">Item4</dhs-menu-item>
+      </dhs-menu>
     </div>`
 })
 class TestDropdownComponent {}

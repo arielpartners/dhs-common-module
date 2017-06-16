@@ -13,9 +13,9 @@ import { Router } from '@angular/router';
   selector: 'dhs-list-item',
   template: `
     <ng-container>
-      <cd-link [path]="link">
+      <dhs-link [path]="link">
         <ng-content></ng-content>
-      </cd-link>
+      </dhs-link>
     </ng-container>
   `,
   styleUrls: ['./list-item.component.less'],

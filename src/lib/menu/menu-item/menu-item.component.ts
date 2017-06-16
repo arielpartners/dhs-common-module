@@ -8,9 +8,9 @@ import {
   selector: 'dhs-menu-item',
   template: `
     <ng-container>
-      <cd-link [path]="link" cdCloseToggle>
+      <dhs-link [path]="link" dhsCloseToggle>
         <ng-content></ng-content>
-      </cd-link>
+      </dhs-link>
     </ng-container>
   `,
   styleUrls: ['./menu-item.component.less'],

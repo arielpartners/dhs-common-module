@@ -7,7 +7,7 @@ import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'cd-menu',
+  selector: 'dhs-menu',
   styleUrls: ['./menu.component.less'],
   template: `
     <div [class.show]="(isToggled$ | async) && ((selectedDropdown$ | async) == (_triggerBy))"
@@ -46,7 +46,7 @@ export class MenuComponent {
 }
 
 @Component({
-  selector: 'cd-menu-header',
+  selector: 'dhs-menu-header',
   template: `
     <h4 class="dropdown-header">
       <i [ngClass]="icon" *ngIf="icon"></i>

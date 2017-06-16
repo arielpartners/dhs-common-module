@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[cdTextInverse], [textInverse], [cd-text-inverse], [text-inverse]'
+  selector: '[dhsTextInverse], [textInverse], [dhs-text-inverse], [text-inverse]'
 })
 export class TextInverseDirective {
   @HostBinding('class.text-inverse') private textInverse: boolean;

@@ -1,4 +1,4 @@
-# Capdash Common Module
+# DHS Common Module
 
 
 ## Agenda
@@ -9,8 +9,8 @@
 
 ## Getting Started
 
-CDUI was developed to provide common Angular4 components for Capdash2 and related DHS projects.
-CDUI allows developers to build and maintain working project with less pain, as well as improve browser load times for Angular2 projects by allowing developers to import UI modules selectively from the node_module directory.
+DHS Common Module was developed to provide common Angular4 components for Capdash2 and related DHS projects.
+DHS Common Module allows developers to build and maintain working project with less pain, as well as improve browser load times for Angular2 projects by allowing developers to import UI modules selectively from the node_module directory.
 
 Follow the instruction below to add this repository to any Angular4 project as a node module.
 
@@ -37,14 +37,14 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
 
 ``` javascript
 import ...
-import { CapDashModule } from 'capdash-common-module/src/lib/module';
+import { DHSModule } from 'dhs-common-module/src/lib/module';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    CapDashModule.forRoot()
+    DHSModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })
@@ -53,7 +53,7 @@ export class AppModule {}
 
 ### 3. Combine Reducers
 
-Capdash Common Module is using redux to help you manage state in your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
+DHS Common Module is using redux to help you manage state in your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
 
 **Combine reducer example**
 
@@ -61,9 +61,9 @@ Capdash Common Module is using redux to help you manage state in your project. H
 import { combineReducers } from 'redux';
 import { composeReducers, defaultFormReducer } from '@angular-redux/form';
     
-import { DropdownReducer } from 'capdash2-common-module/src/lib/menu';
+import { DropdownReducer } from 'dhs-common-module/src/lib/menu';
 import { SomeReducer } from './path/to/some-reducer.js'
-import { AnyReducer } from './path/to/some-reducer.js'
+import { AnyReducer } from './path/to/any-reducer.js'
     
 export const rootReducer = composeReducers(
   defaultFormReducer(),
