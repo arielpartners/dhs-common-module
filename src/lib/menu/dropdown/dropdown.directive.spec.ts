@@ -83,6 +83,7 @@ describe('DropdownDirective', () => {
     it('should add "dropdown-menu" class to child MenuComponent', () => {
       directiveInstance.ngAfterContentInit();
       fixture.detectChanges();
+      expect(directiveInstance.menuComponent._classList['dropdown-test']).toBeTruthy();
       expect(directiveInstance.menuComponent._classList['dropdown-menu']).toBeTruthy();
     });
   });
@@ -100,7 +101,7 @@ class TestCloseToggleComponent {}
       <cd-menu-button id="myDropdownMenu" name="menuName">
         Dropdown Menu
       </cd-menu-button>
-      <cd-menu triggerBy="myDropdownMenu">
+      <cd-menu triggerBy="myDropdownMenu" className="dropdown-test">
         <cd-menu-header icon="fa fa-desktop" text="Header"></cd-menu-header>
         <cd-menu-item link="/item">Item1</cd-menu-item>
         <cd-menu-item link="/item">Item2</cd-menu-item>

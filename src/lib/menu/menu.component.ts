@@ -33,11 +33,15 @@ export class MenuComponent {
 
   _classList: any = {};
   @Input('className')
-  set classList(classes: string) {
-    this._classList = classes.split(' ').reduce((obj: any, className: string) => {
-      obj[className] = true;
-      return obj;
-    }, {});
+  set classList(classes: string | object) {
+    if (typeof classes === 'string'){
+      this._classList = Object.assign(classes.split(' ').reduce((obj: any, className: string) => {
+        obj[className] = true;
+        return obj;
+      }, {}), this._classList);
+    } else {
+      this._classList = Object.assign(classes, this._classList);
+    }
   }
 }
 
