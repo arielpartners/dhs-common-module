@@ -9,7 +9,7 @@ import {
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'cd-link',
+  selector: 'dhs-link',
   template: `
     <a class="text-ellipsis text-black">
       <ng-content></ng-content>

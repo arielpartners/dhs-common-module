@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'cd-list, cd-nav-list',
+  selector: 'dhs-list, dhs-nav-list',
   template: `
       <ng-container>
         <ng-content></ng-content>
@@ -19,7 +19,7 @@ import {
 export class ListComponent {}
 
 @Directive({
-  selector: '[cdNavList], [NavList], [cd-nav-list], [nav-list]',
+  selector: '[dhsNavList], [NavList], [dhs-nav-list], [nav-list]',
 })
 export class NavListCssDirective {
   @HostBinding('class.nav') private navList: boolean;

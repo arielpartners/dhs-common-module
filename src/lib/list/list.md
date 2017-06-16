@@ -10,12 +10,12 @@
 
 #### List
 
-Selector: `cd-list`
+Selector: `dhs-list`
 
 
 #### List Item
 
-Selector: `cd-list-item`
+Selector: `dhs-list-item`
 
 ** Properties **
 
@@ -26,7 +26,7 @@ Selector: `cd-list-item`
 
 #### Badge
 
-Selector: `cd-badge`
+Selector: `dhs-badge`
 
 ** Properties **
 
@@ -40,13 +40,13 @@ Selector: `cd-badge`
 ## Example
 
 ```html
-<cd-list>
-    <cd-list-item link="/item1">
+<dhs-list>
+    <dhs-list-item link="/item1">
       Item1
-      <cd-badge status="success" value="NEW"></cd-badge>
-    </cd-list-item>
-    <cd-list-item link="/item2">Item2</cd-list-item>
-    <cd-list-item link="/item3">Item3</cd-list-item>
-    <cd-list-item link="/item4">Item4</cd-list-item>
-</cd-list>
+      <dhs-badge status="success" value="NEW"></dhs-badge>
+    </dhs-list-item>
+    <dhs-list-item link="/item2">Item2</dhs-list-item>
+    <dhs-list-item link="/item3">Item3</dhs-list-item>
+    <dhs-list-item link="/item4">Item4</dhs-list-item>
+</dhs-list>
 ```
