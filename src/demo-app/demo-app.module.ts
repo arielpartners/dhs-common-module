@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { HttpModule } from '@angular/http';
 import { DemoAppRoute } from './demo-app.routes';
-import { CapDashModule } from '../lib/module';
+import { DHSModule } from '../lib/module';
 
 import { NgReduxModule } from '@angular-redux/store';
 import { NgReduxRouterModule } from '@angular-redux/router';
@@ -34,7 +34,7 @@ import { DummyItemComponent } from './components/item/item.component';
     HttpModule,
     RouterModule.forRoot(DemoAppRoute),
     MarkdownModule.forRoot(),
-    CapDashModule.forRoot(),
+    DHSModule.forRoot(),
     NgReduxModule,
     NgReduxRouterModule,
     StoreModule

@@ -2,14 +2,15 @@ import { TestBed, async, fakeAsync, tick, inject } from '@angular/core/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
 import { NgReduxTestingModule, MockNgRedux } from '@angular-redux/store/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import {CloseToggleDirective, DropdownDirective} from './dropdown.directive';
-
 import { DropdownService } from './dropdown.service';
 import { DropdownActions } from './dropdown.actions';
 import { MenuModule } from '../menu.module';
 
-describe('DropdownDirective', () => {
+
+fdescribe('DropdownDirective', () => {
   let fixture, directiveEl, directiveInstance, service;
 
   beforeEach(() => {
@@ -18,7 +19,11 @@ describe('DropdownDirective', () => {
         TestCloseToggleComponent,
         TestDropdownComponent,
       ],
-      imports: [NgReduxTestingModule, MenuModule],
+      imports: [
+        NgReduxTestingModule,
+        RouterTestingModule,
+        MenuModule
+      ],
       providers: [
         DropdownService,
         DropdownActions,
@@ -64,6 +69,7 @@ describe('DropdownDirective', () => {
         directiveInstance = directiveEl.injector.get(DropdownDirective);
       });
     });
+
     beforeEach(async(
       inject([DropdownService], (menu: DropdownService) => {
         service = menu;
@@ -97,7 +103,7 @@ class TestCloseToggleComponent {}
 
 @Component({
   template: `
-    <div dropdown>
+    <div dhs-dropdown>
       <dhs-menu-button id="myDropdownMenu" name="menuName">
         Dropdown Menu
       </dhs-menu-button>
