@@ -30,7 +30,7 @@ export class DropdownDirective implements AfterContentInit {
   }
 
   ngAfterContentInit() {
-    this.menuComponent.classList = 'dropdown-menu'
+    this.menuComponent.classList = `dropdown-menu`
   }
 
 }
