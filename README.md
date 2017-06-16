@@ -2,9 +2,9 @@
 
 
 ## Agenda
-* [Getting Started](https://github.com/arielpartners/capdash2-common-module#getting-started)
-* [Scripts](https://github.com/arielpartners/capdash2-common-module#scripts)
-* [Modules](https://github.com/arielpartners/capdash2-common-module#modules)
+* [Getting Started](https://github.com/arielpartners/dhs-common-module#getting-started)
+* [Scripts](https://github.com/arielpartners/dhs-common-module#scripts)
+* [Modules](https://github.com/arielpartners/dhs-common-module#modules)
 
 
 ## Getting Started
@@ -21,17 +21,17 @@ Run the following command on your terminal to add dependency in
 
 **for dev-dependency(recommended)**
 ```bash
-npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
+npm install --save-dev git+https://github.com/arielpartners/dhs-common-module.git
 ```
 
 **for dependency**
 ```bash
-npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
+npm install --save git+https://github.com/arielpartners/dhs-common-module.git
 ```
 
 ### 2. Import module
 
-In order to use Capdash2 Common Module on your Angular4 project, you must import the module in `app.module.ts`.
+In order to use DHS Common Module on your Angular4 project, you must import the module in `app.module.ts`.
 
 **src/app.module.ts**
 
@@ -75,7 +75,7 @@ export const rootReducer = composeReducers(
 );
 ```
 
-Browse [included modules](https://github.com/arielpartners/capdash2-common-module#modules) for further detail.
+Browse [included modules](https://github.com/arielpartners/dhs-common-module#modules) for further detail.
 
 
 ## Scripts
@@ -93,13 +93,13 @@ Browse [included modules](https://github.com/arielpartners/capdash2-common-modul
 
 ## Modules
 
-### [MenuModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/menu/menu.md)
+### [MenuModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/menu/menu.md)
 
-### [ListModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/list/list.md)
+### [ListModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
 
-### [IconModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/icon/icon.md)
+### [IconModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/icon/icon.md)
 
-### [TextModule](https://github.com/arielpartners/capdash2-common-module/blob/master/src/lib/list/list.md)
+### [TextModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
 
 ## Technologies Used 
 
