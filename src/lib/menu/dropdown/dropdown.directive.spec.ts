@@ -91,7 +91,7 @@ describe('DropdownDirective', () => {
 
 
 @Component({
-  template: '<a cdCloseToggle></a>'
+  template: '<a close-toggle></a>'
 })
 class TestCloseToggleComponent {}
 

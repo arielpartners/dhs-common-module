@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 // this component should behave as li tag
 @Component({
-  selector: 'cd-list-item',
+  selector: 'dhs-list-item',
   template: `
     <ng-container>
       <cd-link [path]="link">

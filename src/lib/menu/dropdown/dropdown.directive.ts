@@ -3,7 +3,7 @@ import { DropdownService } from './dropdown.service';
 import {MenuComponent} from '../menu.component';
 
 @Directive({
-  selector: '[cdCloseToggle], [cd-close-toggle], [closeToggle], [close-toggle]'
+  selector: '[dhsCloseToggle], [dhs-close-toggle], [closeToggle], [close-toggle]'
 })
 
 export class CloseToggleDirective {
@@ -18,7 +18,7 @@ export class CloseToggleDirective {
 
 
 @Directive({
-  selector: '[cdDropdown], [cd-dropdown], [dropdown]'
+  selector: '[dhsDropdown], [dhs-dropdown], [dropdown]'
 })
 
 export class DropdownDirective implements AfterContentInit {

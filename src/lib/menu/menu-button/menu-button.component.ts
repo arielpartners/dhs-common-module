@@ -2,7 +2,7 @@ import {Component, Input, ViewEncapsulation} from '@angular/core';
 import {DropdownService} from '../dropdown/dropdown.service';
 
 @Component({
-  selector: 'cd-menu-button',
+  selector: 'dhs-menu-button',
   template: `
     <ng-container>
       <label  [for]="inputId"
