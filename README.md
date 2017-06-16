@@ -19,10 +19,14 @@ Follow the instruction below to add this repository to any Angular4 project as a
 Run the following command on your terminal to add dependency in 
  `package.json`.
 
+**for dev-dependency(recommended)**
+```bash
+npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
+```
+
+**for dependency**
 ```bash
 npm install --save git+https://github.com/arielpartners/capdash2-common-module.git
-    
-npm install --save-dev git+https://github.com/arielpartners/capdash2-common-module.git
 ```
 
 ### 2. Import module
@@ -32,19 +36,19 @@ In order to use Capdash2 Common Module on your Angular4 project, you must import
 **src/app.module.ts**
 
 ``` javascript
-    import ...
-    import { CapDashModule } from 'capdash-common-module/src/lib/module';
+import ...
+import { CapDashModule } from 'capdash-common-module/src/lib/module';
 
-    @NgModule({
-      declarations: [
-        AppComponent,
-      ],
-      imports: [
-        CapDashModule.forRoot()
-      ],
-      bootstrap: [AppComponent]
-    })
-    export class AppModule {}
+@NgModule({
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    CapDashModule.forRoot()
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
 ### 3. Combine Reducers
@@ -54,21 +58,21 @@ Capdash Common Module is using redux to help you manage state in your project. H
 **Combine reducer example**
 
 ``` javascript
-    import { combineReducers } from 'redux';
-    import { composeReducers, defaultFormReducer } from '@angular-redux/form';
+import { combineReducers } from 'redux';
+import { composeReducers, defaultFormReducer } from '@angular-redux/form';
     
-    import { DropdownReducer } from 'capdash2-common-module/src/lib/menu';
-    import { SomeReducer } from './path/to/some-reducer.js'
-    import { AnyReducer } from './path/to/some-reducer.js'
+import { DropdownReducer } from 'capdash2-common-module/src/lib/menu';
+import { SomeReducer } from './path/to/some-reducer.js'
+import { AnyReducer } from './path/to/some-reducer.js'
     
-    export const rootReducer = composeReducers(
-      defaultFormReducer(),
-      combineReducers({
-        dropdown: DropdownReducer,
-        some: SomeReducer,
-        any: AnyReducer
-      })
-    );
+export const rootReducer = composeReducers(
+  defaultFormReducer(),
+  combineReducers({
+    dropdown: DropdownReducer,
+    some: SomeReducer,
+    any: AnyReducer
+  })
+);
 ```
 
 Browse [included modules](https://github.com/arielpartners/capdash2-common-module#modules) for further detail.
@@ -78,6 +82,8 @@ Browse [included modules](https://github.com/arielpartners/capdash2-common-modul
 
 | Command | Description |
 | --- | --- |
+| `npm start` | Build and start demo-app on `localhost:4200` |
+| `npm run build` | Build demo-app to `/dist` |
 | `npm run lint` | Run tslint |
 | `npm test` | Run single run karma testing |
 | `npm run test-browser` | Run karma testing on Chrome browser |
