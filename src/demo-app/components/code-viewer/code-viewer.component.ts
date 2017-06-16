@@ -23,7 +23,7 @@ export class CodeViewerComponent implements OnInit {
 
   constructor(private _markdown: MarkdownService) {}
 
-  ngOnInit() {
+  renderLinks() {
     this._markdown.renderer.link = (href: string, title: string, text: string) => {
 
       function marddownUrlToRouteUrl(url: string){
@@ -39,7 +39,21 @@ export class CodeViewerComponent implements OnInit {
         ?  marddownUrlToRouteUrl(href.replace(repoURL, '/'))
         : href;
 
-      return `<a href="${link}" class="king-quote">${text}</a>`;
+      return `<a href="${link}">${text}</a>`;
     }
+  }
+
+  renderTable() {
+    this._markdown.renderer.table = (header: string, body: string) => {
+      return `
+        <table class="table">
+          <thead>${header}</thead>
+          <tbody>${body}</tbody>
+        </table>`
+    }
+  }
+  ngOnInit() {
+    this.renderLinks();
+    this.renderTable();
   }
 }
