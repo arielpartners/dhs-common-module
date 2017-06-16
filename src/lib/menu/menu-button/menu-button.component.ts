@@ -47,7 +47,6 @@ export class MenuButtonComponent {
   // }
 
   onInputClick(e): void {
-    e.preventDefault();
     this.menu.toggleDropdown(e);
   }
 
