@@ -1,4 +1,5 @@
-cd-link {
+cd-link,
+cd-link > a {
   display: block;
 }
 
@@ -24,7 +25,16 @@ cd-link {
   color: #09192F !important;
 }
 
-cd-link.text-black:hover,
-cd-link.text-black:focus {
+cd-link > a.text-black:hover,
+cd-link > a.text-black:focus {
   color: #4F8FE1 !important;
+}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu > cd-menu-item > cd-link > a {
+  color: #333;
+}
+
+.dropdown-menu.media-list > .media > cd-link > a {
+  padding: 10px 20px !important;
 }
