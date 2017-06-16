@@ -5,7 +5,7 @@ import { ListModule } from './list/list.module';
 import { TextModule } from './text/text.module';
 import { LinkModule } from './link/link.module';
 
-const CAPDASH2_UI_MODULES = [
+const DHS_UI_MODULES = [
   IconModule,
   MenuModule,
   ListModule,
@@ -14,14 +14,14 @@ const CAPDASH2_UI_MODULES = [
 ];
 
 @NgModule({
-  imports: [...CAPDASH2_UI_MODULES],
-  exports: CAPDASH2_UI_MODULES
+  imports: [...DHS_UI_MODULES],
+  exports: DHS_UI_MODULES
 })
 
-export class CapDashModule {
+export class DHSModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: CapDashModule,
+      ngModule: DHSModule,
       providers: []
     };
   }

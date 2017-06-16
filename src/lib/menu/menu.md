@@ -18,7 +18,7 @@ Menu item component wraps given child nodes with `<li><a>`. You can manipulate i
 
 #### Menu
 
-Selector: `cd-menu`
+Selector: `dhs-menu`
 
 **Properties**
 
@@ -30,7 +30,7 @@ Selector: `cd-menu`
 
 #### Menu Button
 
-Selector: `cd-menu-button`
+Selector: `dhs-menu-button`
 
 **Properties**
 
@@ -42,7 +42,7 @@ Selector: `cd-menu-button`
 
 #### Menu Header
 
-Selector: `cd-menu-header`
+Selector: `dhs-menu-header`
 
 **Properties**
 
@@ -54,7 +54,7 @@ Selector: `cd-menu-header`
 
 #### Menu Item
 
-Selector: `cd-menu-item`
+Selector: `dhs-menu-item`
 
 **Properties**
 
@@ -67,7 +67,7 @@ Selector: `cd-menu-item`
 
 #### CloseToggleDirective
 
-Selector: `cd-close-toggle`, `close-toggle`
+Selector: `dhs-close-toggle`, `close-toggle`
 
 **Methods**
 

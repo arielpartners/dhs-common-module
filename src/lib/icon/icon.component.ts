@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'cd-icon',
+  selector: 'dhs-icon',
   template: `
     <ng-content></ng-content>
   `,

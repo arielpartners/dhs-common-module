@@ -28,11 +28,11 @@ const appMenu = [
   template: `
     <div>
       <div id="demo-sidebar">
-        <cd-list>
+        <dhs-list>
           <li *ngFor="let item of menu">
             <a [routerLink]="item.link">{{item.name}}</a>
           </li>
-        </cd-list>
+        </dhs-list>
       </div>
       <div id="demo-content">
         <router-outlet></router-outlet>

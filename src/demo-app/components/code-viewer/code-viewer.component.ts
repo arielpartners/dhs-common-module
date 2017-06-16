@@ -26,7 +26,7 @@ export class CodeViewerComponent implements OnInit {
   renderLinks() {
     this._markdown.renderer.link = (href: string, title: string, text: string) => {
 
-      function marddownUrlToRouteUrl(url: string){
+      function marddownUrlToRouteUrl(url: string) {
         if (url.includes('/blob/master/src/lib/') || url.endsWith('.md')) {
           const pathArr = url.replace('/blob/master/src/lib/', '').split('/');
           pathArr.pop();

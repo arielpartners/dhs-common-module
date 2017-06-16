@@ -10,7 +10,7 @@ mostly directives....
 
 #### TextInverseDirective
 
-Selector: `cd-text-inverse`, `text-inverse`
+Selector: `dhs-text-inverse`, `text-inverse`
 
 ** Methods **
 

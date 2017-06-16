@@ -1,11 +1,11 @@
 /* should behave like li tag*/
-cd-menu-item {
+dhs-menu-item {
   display: list-item;
   text-align: -webkit-match-parent;
   list-style-type: none;
 
-  &> cd-link > a:hover,
-  &> cd-link > a:focus {
+  &> dhs-link > a:hover,
+  &> dhs-link > a:focus {
       background: #edf0f5;
       text-decoration: none;
   }
@@ -16,7 +16,7 @@ cd-menu-item {
     border-bottom: 1px solid #eee;
     margin-bottom: -1px;
 
-    &>cd-link > a {
+    &>dhs-link > a {
       display: block;
       padding: 10px 20px !important;
     }
@@ -45,7 +45,7 @@ cd-menu-item {
 }
 
 /* dropdown menu item */
-.dropdown-menu > cd-menu-item > cd-link > a {
+.dropdown-menu > dhs-menu-item > dhs-link > a {
   display: block;
   padding: 5px 15px;
   clear: both;

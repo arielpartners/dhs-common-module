@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 // Todo: use ng-content instead span
 @Component({
-  selector: 'cd-badge',
+  selector: 'dhs-badge',
   template: `
     <span class="badge"
           [class.pull-right]="right"

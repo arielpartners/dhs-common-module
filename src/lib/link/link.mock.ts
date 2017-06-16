@@ -1,7 +1,7 @@
 import { MockComponent } from 'ng2-mock-component';
 
 export const MockLinkComponent = MockComponent({
-  selector: 'cd-link',
+  selector: 'dhs-link',
   inputs: ['path'],
   outputs: ['path']
 })

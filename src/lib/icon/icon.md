@@ -11,7 +11,7 @@ However, if you wish to change font set, you may use `fontSet` attribute to set 
 
 #### Icon
 
-Selector: `cd-icon`
+Selector: `dhs-icon`
 
 ** Properties **
 
@@ -26,35 +26,35 @@ Selector: `cd-icon`
 
 ## Example
 
-By default, `<cd-icon>` will use font-awesome as its icon font.
+By default, `<dhs-icon>` will use font-awesome as its icon font.
 
 ** Basic **
     
-    You can simply add `icon` attribute on `<cd-icon>` to display any font-awesome-icon
+    You can simply add `icon` attribute on `<dhs-icon>` to display any font-awesome-icon
 
 ```html
-<cd-icon icon="desktop"></cd-icon>
+<dhs-icon icon="desktop"></dhs-icon>
 ```
 
 ** Set icon size **
 
-Add `size` attribute on `<cd-icon>` to enlarge current icon.
+Add `size` attribute on `<dhs-icon>` to enlarge current icon.
 For more detail, checkout source file of font-awesome [larger.less](https://github.com/FortAwesome/Font-Awesome/blob/v4.7.0/less/larger.less)
 
 ```html
-<cd-icon icon="desktop" size="lg"></cd-icon>
+<dhs-icon icon="desktop" size="lg"></dhs-icon>
 ```
 
 ** Set icon background color **
 
 ```html
-<cd-icon color="red" icon="alarm"></cd-icon>
+<dhs-icon color="red" icon="alarm"></dhs-icon>
 ```
 
 ** Set icon fixed width **
 
 ```html
-<cd-icon icon="desktop" size="lg" fixed="true"></cd-icon>
+<dhs-icon icon="desktop" size="lg" fixed="true"></dhs-icon>
 ```
 
 ** Set font-set **
@@ -62,5 +62,5 @@ For more detail, checkout source file of font-awesome [larger.less](https://gith
 You can add other font-set as well, however it's not well supported
 
 ```html
-<cd-icon font="other-font" icon="desktop"></cd-icon>
+<dhs-icon font="other-font" icon="desktop"></dhs-icon>
 ```

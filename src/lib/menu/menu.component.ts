@@ -7,7 +7,7 @@ import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'cd-menu',
+  selector: 'dhs-menu',
   styleUrls: ['./menu.component.less'],
   template: `
     <div [class.show]="(isToggled$ | async) && ((selectedDropdown$ | async) == (_triggerBy))"
@@ -26,7 +26,7 @@ export class MenuComponent {
   public _triggerBy: string;
 
   @Input()
-  get triggerBy() { return this._triggerBy; }
+  get triggerBy() { return this._triggerBy }
   set triggerBy(menuID: string) {
     this._triggerBy = `${menuID}-checkbox`;
   }
@@ -34,7 +34,7 @@ export class MenuComponent {
   _classList: any = {};
   @Input('className')
   set classList(classes: string | object) {
-    if (typeof classes === 'string'){
+    if (typeof classes === 'string') {
       this._classList = Object.assign(classes.split(' ').reduce((obj: any, className: string) => {
         obj[className] = true;
         return obj;
@@ -46,7 +46,7 @@ export class MenuComponent {
 }
 
 @Component({
-  selector: 'cd-menu-header',
+  selector: 'dhs-menu-header',
   template: `
     <h4 class="dropdown-header">
       <i [ngClass]="icon" *ngIf="icon"></i>
