@@ -2,7 +2,8 @@ cd-link {
   display: block;
 }
 
-.nav > cd-list-item > cd-link > a {
+.nav > cd-list-item > cd-link > a,
+.nav > cd-menu-item > cd-link > a{
   position: relative;
   padding: 10px 15px;
 
@@ -12,7 +13,8 @@ cd-link {
   }
 }
 
-.dropdown-menu.dropdown-menu-lg .nav > cd-list-item > cd-link > a {
+.dropdown-menu.dropdown-menu-lg .nav > cd-list-item > cd-link > a,
+.dropdown-menu.dropdown-menu-lg .nav > cd-menu-item > cd-link > a {
   padding: 0;
   background: none;
   line-height: 24px;
@@ -20,4 +22,9 @@ cd-link {
 
 .text-black {
   color: #09192F !important;
+}
+
+cd-link.text-black:hover,
+cd-link.text-black:focus {
+  color: #4F8FE1 !important;
 }

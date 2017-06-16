@@ -4,8 +4,8 @@ cd-menu-item {
   text-align: -webkit-match-parent;
   list-style-type: none;
 
-  &> a:hover,
-  &> a:focus {
+  &> cd-link > a:hover,
+  &> cd-link > a:focus {
       background: #edf0f5;
       text-decoration: none;
   }
@@ -16,7 +16,7 @@ cd-menu-item {
     border-bottom: 1px solid #eee;
     margin-bottom: -1px;
 
-    &>a {
+    &>cd-link > a {
       display: block;
       padding: 10px 20px !important;
     }
@@ -45,7 +45,7 @@ cd-menu-item {
 }
 
 /* dropdown menu item */
-.dropdown-menu > cd-menu-item > a {
+.dropdown-menu > cd-menu-item > cd-link > a {
   display: block;
   padding: 5px 15px;
   clear: both;
