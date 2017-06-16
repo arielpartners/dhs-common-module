@@ -8,9 +8,9 @@ import {
   selector: 'cd-menu-item',
   template: `
     <ng-container>
-      <a [href]="link" cdCloseToggle>
+      <cd-link [path]="link" cdCloseToggle>
         <ng-content></ng-content>
-      </a>
+      </cd-link>
     </ng-container>
   `,
   styleUrls: ['./menu-item.component.less'],
