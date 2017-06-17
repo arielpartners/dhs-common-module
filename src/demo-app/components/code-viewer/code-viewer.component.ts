@@ -34,7 +34,7 @@ export class CodeViewerComponent implements OnInit {
         }
         return url;
       }
-      const repoURL = 'https://github.com/arielpartners/capdash2-common-module';
+      const repoURL = 'https://github.com/arielpartners/dhs-common-module';
       const link = href.includes(repoURL)
         ?  marddownUrlToRouteUrl(href.replace(repoURL, '/'))
         : href;
