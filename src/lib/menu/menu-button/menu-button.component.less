@@ -12,6 +12,21 @@ dhs-menu-button {
   & > label {
     line-height: 20px;
     padding: 17px 15px;
+    position: relative;
+    display: block;
+
+    &:hover, &:focus {
+      color: #333;
+      background: #fafafa;
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      text-decoration: none;
+    }
+
+    &:hover, &:focus {
+      color: #333;
+      background-color: transparent;
+    }
 
     & > .label {
       position: absolute;
@@ -29,10 +44,6 @@ dhs-menu-button {
   }
 
   input[type=radio].radio-hack {
-    /*position: absolute;
-    top: -9999px;
-    left: -9999px;*/
-
     display: none;
   }
 }
