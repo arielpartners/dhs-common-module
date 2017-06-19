@@ -23,7 +23,8 @@
         "../../node_modules/bootstrap/less/bootstrap.less",
         "../../node_modules/prismjs/themes/prism.css",
         "../../node_modules/font-awesome/css/font-awesome.css",
-        "../../node_modules/flag-icon-css/less/flag-icon.less"
+        "../../node_modules/flag-icon-css/less/flag-icon.less",
+        "../../node_modules/dhs-common-styles/less/style.less"
       ],
       "environmentSource": "../environments/environment.ts",
       "environments": {

@@ -4,7 +4,7 @@
 <code-viewer path="./assets/docs/menu/menu.example1.md"></code-viewer>
 
 <div class="example-container">
-  <dhs-menu triggerBy="myMenu">
+  <dhs-menu>
     <dhs-menu-header icon="fa fa-desktop" text="Header"></dhs-menu-header>
     <dhs-menu-item link="/item">Item1</dhs-menu-item>
     <dhs-menu-item link="/item">Item2</dhs-menu-item>
@@ -26,6 +26,56 @@
       <dhs-menu-item link="/item">Item2</dhs-menu-item>
       <dhs-menu-item link="/item">Item3</dhs-menu-item>
       <dhs-menu-item link="/item">Item4</dhs-menu-item>
+    </dhs-menu>
+  </div>
+</div>
+
+<div class="example-container">
+  <div dropdown>
+    <dhs-menu-button id="myMediaDropdownMenu" name="mediaMenu">
+      Dropdown Menu
+    </dhs-menu-button>
+    <dhs-menu className="media-list" triggerBy="myMediaDropdownMenu">
+      <dhs-menu-item class="media" link="/item">
+        <div class="media-left">
+          <dhs-icon class="media-object" icon="warning" color="red"></dhs-icon>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">Heading</h6>
+          <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+          <div class="text-muted f-s-11">1 min ago</div>
+        </div>
+      </dhs-menu-item>
+      <dhs-menu-item class="media" link="/item">
+        <div class="media-left">
+          <dhs-icon class="media-object" icon="warning" color="red"></dhs-icon>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">Sam</h6>
+          <p>Sadness intensify...</p>
+          <div class="text-muted f-s-11">1 min ago</div>
+        </div>
+      </dhs-menu-item>
+      <dhs-menu-item class="media" link="/item">
+        <div class="media-left">
+          <dhs-icon class="media-object" icon="warning" color="red"></dhs-icon>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">Laura</h6>
+          <p>Did you forget to submit timesheet Sam?</p>
+          <div class="text-muted f-s-11">4 min ago</div>
+        </div>
+      </dhs-menu-item>
+      <dhs-menu-item class="media" link="/item">
+        <div class="media-left">
+          <dhs-icon class="media-object" icon="warning" color="green"></dhs-icon>
+        </div>
+        <div class="media-body">
+          <h6 class="media-heading">Heading</h6>
+          <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+          <div class="text-muted f-s-11">10 min ago</div>
+        </div>
+      </dhs-menu-item>
     </dhs-menu>
   </div>
 </div>

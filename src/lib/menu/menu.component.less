@@ -1,16 +1,14 @@
-.header-nav-left > dhs-menu > .dropdown-menu {
-  border-top: 1px solid #eee;
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
 dhs-menu {
   display: block;
-}
+  &> .dropdown-menu {
+    border-top: 1px solid #eee;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 
-dhs-menu > .dropdown-menu {
-  border-top: 1px solid #eee;
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    &.media-list p {
+      margin-bottom: 4px;
+      max-width: 200px;
+    }
+  }
 }

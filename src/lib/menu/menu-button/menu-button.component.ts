@@ -7,7 +7,7 @@ import {DropdownService} from '../dropdown/dropdown.service';
     <ng-container>
       <label  [for]="inputId"
               [ngClass]="_classList"
-              class="dropdown-toggle text-white">
+              class="dropdown-toggle">
         <ng-content></ng-content>
       </label>
       <input type="radio" class="radio-hack"
@@ -25,7 +25,6 @@ export class MenuButtonComponent {
   private _inputId: string;
 
   /** The unique ID for this button toggle. */
-  // @HostBinding()
   @Input('id')
   get inputId() {
     return `${this._inputId}-checkbox`;
@@ -41,10 +40,6 @@ export class MenuButtonComponent {
   constructor(
     public menu: DropdownService
   ) {}
-
-  // get inputId(): string {
-  //   return `${this._inputId}-checkbox`;
-  // }
 
   onInputClick(e): void {
     this.menu.toggleDropdown(e);
