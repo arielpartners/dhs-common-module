@@ -18,6 +18,7 @@ import { CodeViewerComponent } from './components/code-viewer/code-viewer.compon
 import { DemoListComponent } from './components/list/list.component';
 import { DemoIconComponent } from './components/icon/icon.component';
 import { DummyItemComponent } from './components/item/item.component';
+import {DemoBadgeComponent} from './components/badge/badge.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DummyItemComponent } from './components/item/item.component';
     DemoMenuComponent,
     DemoListComponent,
     DemoIconComponent,
-    DummyItemComponent
+    DummyItemComponent,
+    DemoBadgeComponent
   ],
   imports: [
     BrowserModule,
