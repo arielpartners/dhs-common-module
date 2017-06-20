@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LinkModule } from '../link/link.module';
 import { ListComponent, NavListCssDirective } from './list.component';
-import { BadgeComponent } from './badge/badge.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,7 +9,6 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [
     ListComponent,
     ListItemComponent,
-    BadgeComponent,
     NavListCssDirective
   ],
   imports: [
@@ -21,7 +19,6 @@ import { BrowserModule } from '@angular/platform-browser';
   exports: [
     ListComponent,
     ListItemComponent,
-    BadgeComponent,
     NavListCssDirective
   ]
 

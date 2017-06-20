@@ -30,13 +30,29 @@ describe('MenuComponent', () => {
     });
   });
 
-  describe('set className to child element node', () => {
-    it('should generate _classList object', () => {
-
+  describe('set classList(classes: string | object) on input property "className"', () => {
+    it('should generate _classList object when value is provided', () => {
       component.classList = 'some-class';
       fixture.detectChanges();
-      const classList = component._classList;
-      expect(classList['some-class']).toBeTruthy();
+      expect(component._classList['some-class']).toBeTruthy();
+    });
+
+    it('should generate _classList object with multiple keys when provided value is string of multiple className', () => {
+      component.classList = 'some-class another-class';
+      fixture.detectChanges();
+      expect(component._classList['some-class']).toBeTruthy();
+      expect(component._classList['another-class']).toBeTruthy();
+    });
+
+    it('should generate _classList object with multiple keys when provided value is object', () => {
+      const expectedClassObj = {
+        'some-class': true,
+        'another-class': true
+      };
+      component.classList = expectedClassObj;
+      fixture.detectChanges();
+      expect(component._classList['some-class']).toBeTruthy();
+      expect(component._classList['another-class']).toBeTruthy();
     });
   });
 });
