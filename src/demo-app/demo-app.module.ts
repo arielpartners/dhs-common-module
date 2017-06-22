@@ -19,14 +19,18 @@ import { DemoListComponent } from './components/list/list.component';
 import { DemoIconComponent } from './components/icon/icon.component';
 import { DummyItemComponent } from './components/item/item.component';
 import {DemoBadgeComponent} from './components/badge/badge.component';
+import {DemoAuthComponent} from './components/auth/auth.component';
+import {DemoLinkComponent} from './components/link/link.component';
 
 @NgModule({
   declarations: [
     DemoAppComponent,
+    DemoAuthComponent,
     HomeComponent,
     CodeViewerComponent,
     DemoMenuComponent,
     DemoListComponent,
+    DemoLinkComponent,
     DemoIconComponent,
     DummyItemComponent,
     DemoBadgeComponent
