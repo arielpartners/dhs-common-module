@@ -14,9 +14,9 @@ DHS Common Module allows developers to build and maintain working project with l
 
 Follow the instruction below to add this repository to any Angular4 project as a node module.
 
-### 1.Installation
+### 1. Installation
 
-Run the following command on your terminal to add dependency in 
+Run the following command on your terminal to add dependencies in
  `package.json`.
 
 **for dev-dependency(recommended)**
@@ -53,18 +53,18 @@ export class AppModule {}
 
 ### 3. Combine Reducers
 
-DHS Common Module is using redux to help you manage state in your project. However, redux store lives in your project, NOT within this repo. Therefore, developers are responsible to combine reducers for certain Capdash Common Module. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detail information about how to use combineReducers.
+DHS Common Module is using redux to help you manage state in your project. However, redux store lives in your project, NOT within this repo. Therefore, developers need to combine reducers for certain Common Modules to work properly. [Click here](http://redux.js.org/docs/api/combineReducers.html) for detailed information about how to use combineReducers.
 
 **Combine reducer example**
 
 ``` javascript
 import { combineReducers } from 'redux';
 import { composeReducers, defaultFormReducer } from '@angular-redux/form';
-    
+
 import { DropdownReducer } from 'dhs-common-module/src/lib/menu';
 import { SomeReducer } from './path/to/some-reducer.js'
 import { AnyReducer } from './path/to/any-reducer.js'
-    
+
 export const rootReducer = composeReducers(
   defaultFormReducer(),
   combineReducers({
@@ -89,19 +89,26 @@ Browse [included modules](https://github.com/arielpartners/dhs-common-module#mod
 | `npm run test-browser` | Run karma testing on Chrome browser |
 | `npm run coverage` | Run karma testing istanbul coverage |
 | `npm run coverage-open` | Open karma coverage test report |
+| `npm run json-server` | From second terminal window, spins up simple back end for demo-app |
 
 
 ## Modules
 
-### [MenuModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/menu/menu.md)
+#### [Auth](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/auth/auth.md)
 
-### [ListModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
+#### [Badge](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/badge/badge.md)
 
-### [IconModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/icon/icon.md)
+#### [Menu](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/menu/menu.md)
 
-### [TextModule](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
+#### [Link](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/link/link.md)
 
-## Technologies Used 
+#### [List](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
+
+#### [Icon](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/icon/icon.md)
+
+#### [Text](https://github.com/arielpartners/dhs-common-module/blob/master/src/lib/list/list.md)
+
+## Technologies Used
 
 * [Angular 4](https://angular.io/) Angular4 JavaScript Client-Side MVC Framework (bundles Typescript and RxJS)
 * [Redux](http://redux.js.org/) predictable state container for JavaScript apps
