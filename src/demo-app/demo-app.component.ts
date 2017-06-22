@@ -6,12 +6,20 @@ const appMenu = [
     link: '/'
   },
   {
+    name: 'Auth',
+    link: '/auth'
+  },
+  {
     name: 'Badge',
     link: '/badge'
   },
   {
     name: 'Menu',
     link: '/menu'
+  },
+  {
+    name: 'Link',
+    link: '/link'
   },
   {
     name: 'List',
