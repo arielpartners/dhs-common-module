@@ -19,17 +19,25 @@ Selector: `dhs-badge`
 | @Input() status | string | Assign status of badge |
 | @Input() type | string | Assign type of badge |
 
-choose one from following badge status options
-['default, danger, warning, success, info, primary, inverse']
+##### Badge Status options
 
-if not chosen status will be set as 'default'
+* primary
+* danger
+* warning
+* success
+* info
+* inverse
+* default
 
+if not chosen, status will be set to 'default'
 
-choose one from following badge type options
-['label, badge, badge-square']
+##### Badge Type options
 
-if not chosen type will be set as 'badge'
+* label
+* badge
+* badge-square
 
+if not chosen, type will be set as 'badge'
 
 ```html
 <dhs-badge>Default</dhs-badge>
