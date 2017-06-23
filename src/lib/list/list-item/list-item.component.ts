@@ -4,17 +4,20 @@ import {
   ViewEncapsulation,
   ChangeDetectionStrategy,
   ElementRef,
-  Renderer2,
-  OnInit, ViewChild, AfterContentInit, AfterViewInit, AfterViewChecked
+  ViewContainerRef,
+  AfterViewInit,
+  ViewChild,
+  AfterViewChecked, ChangeDetectorRef
 } from '@angular/core';
-import {Router, RouterLinkActive} from '@angular/router';
+import {ActivatedRoute, RouterLinkActive} from '@angular/router';
 import {LinkComponent} from '../../link/link.component';
+import {Subscription} from 'rxjs/Subscription';
 
 // this component should behave as li tag
 @Component({
   selector: 'dhs-list-item',
   template: `
-    <ng-container class="test">
+    <ng-container>
       <dhs-link #linkItem [path]="link" activeClass="active">
         <ng-content></ng-content>
       </dhs-link>
@@ -26,24 +29,31 @@ import {LinkComponent} from '../../link/link.component';
   encapsulation: ViewEncapsulation.None,
 })
 
-export class ListItemComponent implements AfterViewChecked {
+export class ListItemComponent implements AfterViewInit {
+
+  public isActive: boolean;
 
   @Input() link: string;
   // @ViewChild(RouterLinkActive) routerLinkActive: RouterLinkActive;
   @ViewChild('linkItem') linkItem: LinkComponent;
 
-  constructor(public ref: ElementRef) {
-
+  constructor(
+    public ref: ElementRef,
+    private route: ActivatedRoute
+  ) {
+    this.isActive = false;
   }
 
-  classList() {
-    this.ref.nativeElement.classList.add('active')
-    console.log(this.ref, this.ref.nativeElement.classList)
-  }
-  ngAfterViewChecked() {
+  ngAfterViewInit() {
+
+    console.log('ListItemComponent', this.route, this.route.toString(), this.link)
     // console.log('ListItemComponent', this.linkItem.routerLinkActive.isActive)
-    if(this.linkItem.routerLinkActive.isActive) {
-      this.classList();
-    }
+    // if(this.linkItem.routerLinkActive.isActive) {
+    //   this.isActive = true;
+    //   this.ref.nativeElement.classList.add('active')
+    // } else {
+    //   this.isActive = false;
+    //   this.ref.nativeElement.classList.remove('active')
+    // }
   }
 }
