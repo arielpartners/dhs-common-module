@@ -3,7 +3,8 @@ import {
   Directive,
   HostBinding,
   ViewEncapsulation,
-  Input
+  Input,
+  ChangeDetectionStrategy
 } from '@angular/core';
 
 @Component({
@@ -14,7 +15,8 @@ import {
       </ng-container>
   `,
   styleUrls: ['./list.component.less'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ListComponent {}
 

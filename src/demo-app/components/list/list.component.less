@@ -1,7 +1,24 @@
 demo-list {
-  width: 200px;
+  dhs-list-item.active,
   dhs-link.active,
   dhs-link > a.active {
     background: red;
   }
+}
+
+dhs-list-item.has-sub {
+  &.active > .sub-menu,
+  &.expand > a > .sub-menu,
+  &.expand > dhs-link > a > .sub-menu{
+    display: block;
+  }
+}
+
+dhs-list.sub-menu {
+  list-style-type: none;
+  padding: 10px 0 10px 30px;
+  margin: 0;
+  background: white;
+  position: relative;
+  display: none;
 }
