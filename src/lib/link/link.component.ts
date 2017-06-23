@@ -4,21 +4,17 @@ import {
   ViewEncapsulation,
   AfterViewInit,
   ViewChild, ElementRef,
-  ChangeDetectionStrategy, OnDestroy, OnInit, AfterViewChecked,
+  ChangeDetectionStrategy, AfterViewChecked,
 } from '@angular/core';
 
 import {Router, RouterLinkActive, RouterLinkWithHref} from '@angular/router';
 import {WindowRef} from '../utils/window.service';
 import {Location} from '@angular/common';
-import {Subscriber} from 'rxjs/Subscriber';
-import {Observable} from 'rxjs/Observable';
-import {Subject} from 'rxjs/Subject';
-import {Subscription} from 'rxjs/Subscription';
 
 @Component({
   selector: 'dhs-link',
   template: `
-    <a [routerLink]="[path]" [routerLinkActive]="activeClass">
+    <a [routerLink]="[path]">
       <ng-content></ng-content>
     </a>
   `,
@@ -32,8 +28,7 @@ import {Subscription} from 'rxjs/Subscription';
 export class LinkComponent implements AfterViewInit, AfterViewChecked {
 
   private _path: string;
-  private subject = new Subject<any>();
-  public isActive$: Subscription;
+
   // @ViewChild(DirectiveName) allows user to access methods of the selected Directive
   // In this case we want to use methods of RouterLinkWithHref
   @ViewChild(RouterLinkWithHref) routerLink: RouterLinkWithHref;
@@ -54,18 +49,10 @@ export class LinkComponent implements AfterViewInit, AfterViewChecked {
     this.activeClass = '';
   }
 
-  // ngOnInit() {
-  //  console.log('ngOnInit', this.routerLinkActive)
-  // }
-  //
-  // ngOnDestroy() {
-  //   console.log('ngOnDestroy', this.routerLinkActive);
-  // }
-
   ngAfterViewInit () {
-    this.routerLinkActive.linksWithHrefs.changes.subscribe(_ => {
-      console.log('LinkComponent linksWithHrefs changed')
-    });
+    // this.routerLinkActive.linksWithHrefs.changes.subscribe(_ => {
+    //   console.log('LinkComponent linksWithHrefs changed')
+    // });
     // console.log('ngAfterViewInit', this.routerLinkActive, this.routerLinkActive);
     // console.log('LinkComponent', this.routerLinkActive)
     this.setLink();

@@ -1,55 +1,88 @@
 <code-viewer path="./assets/docs/list/list.md"></code-viewer>
 
-
 <div class="example-container container-fluid">
-  <h2>Example1</h2>
+  <h2>Basic Example</h2>
   <div class="row">
     <div class="col-xs-12 col-md-6">
 
     </div>
     <div class="col-xs-12 col-md-6">
       <dhs-list>
-        <dhs-list-item class="custom" link="/list" routerLinkActive="active">Active List</dhs-list-item>
-        <dhs-list-item link="/list" routerLinkActive="test">Active List</dhs-list-item>
-        <dhs-list-item link="/auth">
-          Non Active with badge
-          <dhs-badge status="success" type="badge"></dhs-badge>
-        </dhs-list-item>
-        <dhs-list-item link="http://www.google.com">Non Active with external link</dhs-list-item>
-        <dhs-list-item link="/item">Test</dhs-list-item>
+        <dhs-list-item class="custom">List Item1</dhs-list-item>
+        <dhs-list-item class="custom">List Item2</dhs-list-item>
+        <dhs-list-item class="custom">List Item3</dhs-list-item>
+        <dhs-list-item class="custom">List Item4</dhs-list-item>
       </dhs-list>
     </div>
   </div>
 </div>
 
 <div class="example-container container-fluid">
-  <h2>Example2</h2>
+  <h2>Linked List Item</h2>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <dhs-list>
+        <dhs-list-item>
+          <a routerLink="/auth">Link to auth</a>
+        </dhs-list-item>
+        <dhs-list-item>
+          <a routerLink="/badge">Link to badge</a>
+        </dhs-list-item>
+        <dhs-list-item>
+          <a routerLink="/menu">Link to menu</a>
+        </dhs-list-item>
+      </dhs-list>
+    </div>
+  </div>
+</div>
+
+<div class="example-container container-fluid">
+  <h2>Nested List</h2>
   <div class="row">
     <div class="col-xs-12 col-md-6">
 
     </div>
     <div class="col-xs-12 col-md-6">
       <dhs-list expandable>
-        <dhs-list-item class="custom" link="/list">List Item1</dhs-list-item>
-        <dhs-list-item has-sub name="list2">
-          <b class="caret" pull="right"></b>
-          <dhs-icon icon="bar-chart"></dhs-icon>
-          <span>List Item2</span>
-          <dhs-list sub-list>
-            <dhs-list-item link="/list">sub list item1</dhs-list-item>
-            <dhs-list-item link="/auth">sub list item2</dhs-list-item>
-            <dhs-list-item link="/item">sub list item3</dhs-list-item>
-            <dhs-list-item link="http://www.google.com">sub list item4</dhs-list-item>
-          </dhs-list>
+        <dhs-list-item class="custom" routerLinkActive="active">
+          <dhs-link path="/list">List Item1</dhs-link>
+        </dhs-list-item>
+        <dhs-list-item has-sub name="list2" routerLinkActive="active">
+          <a>
+            <b class="caret" pull="right"></b>
+            <dhs-icon icon="bar-chart"></dhs-icon>
+            <span>List Item2</span>
+            <dhs-list sub-list>
+              <dhs-list-item routerLinkActive="active">
+                <a routerLink="/list">sub list item1</a>
+              </dhs-list-item>
+              <dhs-list-item routerLinkActive="active">
+                <a routerLink="/auth">sub list item2</a>
+              </dhs-list-item>
+              <dhs-list-item routerLinkActive="active">
+                <a routerLink="/test">sub list item3</a>
+              </dhs-list-item>
+              <dhs-list-item link="http://www.google.com">sub list item4</dhs-list-item>
+            </dhs-list>
+          </a>
         </dhs-list-item>
         <dhs-list-item has-sub name="list3" routerLinkActive="active">
-          <b class="caret" pull="right"></b>
-          <dhs-icon icon="bar-chart"></dhs-icon>
-          <span>List Item3</span>
-          <dhs-list sub-list>
-            <dhs-list-item link="/item" routerLinkActive="active">sub list item1</dhs-list-item>
-            <dhs-list-item link="/item" routerLinkActive="active">sub list item2</dhs-list-item>
-          </dhs-list>
+          <a>
+            <b class="caret" pull="right"></b>
+            <dhs-icon icon="bar-chart"></dhs-icon>
+            <span>List Item3</span>
+            <dhs-list sub-list>
+              <dhs-list-item routerLinkActive="active">
+                <a path="/item">sub list item1</a>
+              </dhs-list-item>
+              <dhs-list-item routerLinkActive="active">
+                <a path="/item">sub list item2</a>
+              </dhs-list-item>
+            </dhs-list>
+          </a>
         </dhs-list-item>
       </dhs-list>
     </div>
