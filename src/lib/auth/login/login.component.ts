@@ -1,4 +1,9 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  ViewEncapsulation
+} from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
@@ -10,6 +15,7 @@ import { AuthService } from '../auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 
